@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+        
+        <div class="weather-container">
+            <!-- grand location container -->
+             <div class="sub-container grand-location-container">
+                <i class="fa-solid fa-location"></i>
+                <p>Grand Location Access</p>
+                <p>Allow access to get weather information</p>
+                <button class="btn" data-grandAccess>Grand Access</button>
+             </div>
+
+            <!-- search form -->
+            <form class="form-container" data-SearchForm>
+                <input type="text" placeholder="Search for City..." data-searchInput>
+                <button class="btn"><i class="fa-solid fa-search"></i></button>
+            </form>
+
+            <!-- loading screen container -->
+            <div class="sub-container loading-container">
+                <i class="fa-solid fa-spinner"></i>
+                <p>Loading</p>
+            </div>
+
+            <!-- show weather info -->
+            <div class="sub-container user-info-container">
+
+                <div class="name">
+                    <p data-cityName></p>
+                    <img src="" data-countryIcon>
+                </div>
+                
+                <p data-weatherDesc></p>
+                <img data-weatherIcon>
+
+                <p data-temp></p>
+
+                <div class="parameter-container">
+                    <div class="parameter">
+                        <i class="fa-solid fa-wind"></i>
+                        <p>Windspeed</p>
+                        <p data-windSpeed></p>
+                    </div>
+                    <div class="parameter">
+                        <i class="fa-solid fa-droplet"></i>
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <div class="parameter">
+                        <i class="fa-solid fa-cloud"></i>
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/eeea874b13.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
