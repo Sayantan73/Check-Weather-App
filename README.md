@@ -13,7 +13,7 @@ This repository contains a simple weather application frontend built using **HTM
 
 ## Screenshots
 
-(Include screenshots or GIFs demonstrating the app's features here.)
+(click on the live link)
 
 ## Getting Started
 
